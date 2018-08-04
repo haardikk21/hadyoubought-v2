@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import WarningHeader from './Components/WarningHeader/WarningHeader';
-import CoinCards from './Components/CoinCards/CoinCards';
+import Content from './Components/Content/Content';
 import Footer from './Components/Footer/Footer';
 import './App.css';
 
@@ -68,7 +68,7 @@ class App extends Component {
 		return (
 			<div className="App">
 				<WarningHeader message="FOMO is bad, FUD is worse. Still, invest responsibly" />
-				<CoinCards coins={coinsInfo} />
+				<Content coins={coinsInfo} />
 				<Footer github_link="https://github.com/haardikk21/hadyoubought-v2" />
 			</div>
 		);

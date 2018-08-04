@@ -8,6 +8,6 @@ TODO:
 - Have the backend make a request to CryptoCompare and update the cards
 
 Known Bugs:
-- Footer overlaps content at bottom
+- Footer overlaps content at bottom on smaller screens
 
 Credits to https://cryptoicons.co/ for all SVG cryptocurrency icons.

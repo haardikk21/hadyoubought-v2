@@ -3,10 +3,9 @@
 	bottom: 0;
 	width: 100%;
 	background-color: #ccccd6;
-	position: fixed;
 }
 
 .Footer-text {
-	font-size: 15px;
-	padding: 10px;
+	font-size: 1.2vmax;
+	padding: auto;
 }

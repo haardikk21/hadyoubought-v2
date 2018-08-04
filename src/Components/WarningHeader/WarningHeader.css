@@ -3,11 +3,9 @@
 	top: 0;
 	width: 100%;
 	background-color: #c60c0c;
-	position: fixed;
 	color: white;
 }
-
 .WarningHeader-text {
-	font-size: 20px;
-	padding: 10px;
+	font-size: 1.5vmax;
+	padding: auto;
 }

@@ -2,6 +2,8 @@
 
 A modern remake of HadYouBought
 
+You can check this out at https://hadyoubought.com/v2/ for now.
+
 TODO:
 - Create a component for the Title and Datepicker which also includes a form for the price
 - Improve the footer design

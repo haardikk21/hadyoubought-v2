@@ -1,22 +1,23 @@
 .Card {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	transition: 0.3s;
-	border-radius: 5px; /* 5px rounded corners */
-	width: 150px;
-	display: inline-block;
-	margin: 1em 1em;
-	background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  width: 150px;
+  display: inline-block;
+  margin: 1em 1em;
+  background-color: black;
 }
 
 .Card:hover {
-	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .Card-container {
-	padding: 2px 16px;
-	background-color: white;
+  padding: 2px 16px;
+  background-color: white;
 }
 
 .Card-img {
-	padding: 10px;
+  padding: 10px;
 }

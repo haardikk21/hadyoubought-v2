@@ -6,14 +6,11 @@ You can check this out at https://hadyoubought.com/v2/ for now.
 
 TODO:
 
-- Improve the footer design
-- Add number animation
 - Add animated background
-- Add sounds
 
 Known Bugs:
 
 - Footer overlaps content at bottom on smaller screens
-- Datepicker month arrows don't work
+- Sound doesn't loop on every card even though it's shorter than the delay
 
 Credits to https://cryptoicons.co/ for all SVG cryptocurrency icons.

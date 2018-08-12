@@ -1,11 +1,11 @@
 .Footer {
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: #ccccd6;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
 }
 
 .Footer-text {
-	font-size: 1.2vmax;
-	padding: auto;
+  font-size: 1.2vmax;
+  padding: auto;
 }

@@ -83,7 +83,10 @@ class App extends Component {
       <div className="App">
         <WarningHeader message="FOMO is bad, FUD is worse. Still, invest responsibly" />
         <Content currentCoins={coinsInfo} />
-        <Footer github_link="https://github.com/haardikk21/hadyoubought-v2" />
+        <Footer
+          githubLink="https://github.com/haardikk21/hadyoubought-v2"
+          portfolioLink="https://haardikk.me/"
+        />
       </div>
     );
   }

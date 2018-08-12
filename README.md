@@ -11,6 +11,5 @@ TODO:
 Known Bugs:
 
 - Footer overlaps content at bottom on smaller screens
-- Sound doesn't loop on every card even though it's shorter than the delay
 
 Credits to https://cryptoicons.co/ for all SVG cryptocurrency icons.

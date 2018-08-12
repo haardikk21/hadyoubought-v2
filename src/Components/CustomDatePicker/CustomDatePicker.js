@@ -6,6 +6,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import "./CustomDatePicker.css";
 
 const dingAudio = new Audio("ding.mp3");
+dingAudio.load();
 
 class CustomDatePicker extends Component {
   constructor(props) {
@@ -57,6 +58,7 @@ class CustomDatePicker extends Component {
         let coinIdx = newCoins.findIndex(_coin => _coin.sym === coin.sym);
         newCoins[coinIdx] = _newCoin;
         this.props.updateCoins(newCoins);
+        dingAudio.currentTime = 0;
         dingAudio.play();
       }
     }

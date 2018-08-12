@@ -9,8 +9,7 @@ class CustomDatePicker extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      startDate: moment(),
-      isOpen: false
+      startDate: moment()
     };
     this.handleChange = this.handleChange.bind(this);
     this.toggleCalendar = this.toggleCalendar.bind(this);
@@ -18,9 +17,9 @@ class CustomDatePicker extends Component {
 
   async handleChange(date) {
     this.setState({
-      startDate: date
+      startDate: moment(date)
     });
-    this.toggleCalendar();
+
     const today = moment();
     const oldDate = moment(date);
     if (oldDate.isBefore(today)) {
@@ -29,7 +28,6 @@ class CustomDatePicker extends Component {
       let newCoins = this.props.currentCoins;
       for (let i = 0; i < this.props.currentCoins.length; i++) {
         let coin = this.props.currentCoins[i];
-        console.log(coin.name);
         let todayPriceUrl = `https://min-api.cryptocompare.com/data/pricehistorical?fsym=${coin.sym.toUpperCase()}&tsyms=USD&ts=${today.format(
           "X"
         )}`;
@@ -58,29 +56,28 @@ class CustomDatePicker extends Component {
         this.props.updateCoins(newCoins);
       }
     }
+    this.toggleCalendar();
   }
 
   toggleCalendar(e) {
     e && e.preventDefault();
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
+    this.setState({ isOpen: !this.state.isOpen });
   }
 
   render() {
     return (
-      <div className="CustomDatePicker" onClick={this.toggleCalendar}>
+      <label className="CustomDatePicker" onClick={this.toggleCalendar}>
         {this.state.startDate.format("MM-DD-YYYY")}
         {this.state.isOpen && (
           <DatePicker
             selected={this.state.startDate}
             onChange={this.handleChange}
-            maxDate={moment().format("YYYY-MM-DD")}
             withPortal
             inline
+            maxDate={moment()}
           />
         )}
-      </div>
+      </label>
     );
   }
 }

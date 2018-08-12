@@ -19,6 +19,7 @@ class CustomDatePicker extends Component {
     this.setState({
       startDate: moment(date)
     });
+    this.toggleCalendar();
 
     const today = moment();
     const oldDate = moment(date);
@@ -56,7 +57,6 @@ class CustomDatePicker extends Component {
         this.props.updateCoins(newCoins);
       }
     }
-    this.toggleCalendar();
   }
 
   toggleCalendar(e) {
@@ -66,18 +66,21 @@ class CustomDatePicker extends Component {
 
   render() {
     return (
-      <label className="CustomDatePicker" onClick={this.toggleCalendar}>
-        {this.state.startDate.format("MM-DD-YYYY")}
+      <div className="CustomDatePicker">
+        <label onClick={this.toggleCalendar}>
+          {this.state.startDate.format("DD-MM-YYYY")}
+        </label>
         {this.state.isOpen && (
           <DatePicker
+            customInput={<CustomDatePicker />}
             selected={this.state.startDate}
             onChange={this.handleChange}
+            maxDate={moment()}
             withPortal
             inline
-            maxDate={moment()}
           />
         )}
-      </label>
+      </div>
     );
   }
 }
